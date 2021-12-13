@@ -4,26 +4,25 @@ body{
 
 .login-design{
     display: grid;
-    grid-template-columns: repeat(2, 50%);
     height: 100vh;
-}
-
-.waves{
-    background:linear-gradient(#000046, #1cb5e0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.waves img{
-    height: 70%;
-    width: 50%;
+    background-image: url('../img/ola-verde2.png');
+    background-repeat: no-repeat;
+    background-position: right;
 }
 
 .login{
+    background-image: url('../img/ola verde.png');
+    background-repeat: no-repeat;
+    background-position: left;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.login-data img{
+    width: 15%;
+    height: 15%;
+    border-radius: 50%;
 }
 
 .login-data{
@@ -39,7 +38,7 @@ body{
 
 .input-group{
     position: relative;
-    width: 60%;
+    width: 30%;
     margin: 0 auto;
     margin-bottom: 1.5rem;
 }
@@ -58,22 +57,23 @@ body{
 
 .input-fill input:focus{
     outline: none;
-    border-color: #6c1aef;
+    border-color: #00ED89;
 }
 
 .input-fill input:hover{
     background-color: #e9ecef;
 }
 
+.input-fill input:valid + .input-label,
 .input-fill input:focus + .input-label{
     top: 0;
     margin-bottom: 2rem;
-    color: #6c1aef;
+    color: #848f9a;
 }
 
 
 .input-fill input:focus ~ i {
-    color: #6c1aef;
+    color: #00ED89;
 }
 
 .input-fill .input-label {
@@ -96,27 +96,27 @@ body{
 
 .login-form a{
     display: block;
-    width: 85%;
-    text-align: right;
+    width: 100%;
+    text-align: center;
     text-decoration: none;
     color: #848f9a;
-    margin-bottom: 5rem;
+    margin-bottom: 1rem;
     font-weight: 800;
     transition: 0.3s ease-in-out all;
     font-size: 15px;
 }
 
 .login-form a:hover{
-    color: #6c1aef;
+    color: #00ED89;
 }
 
 .btn-login{
     border-radius: 3rem;
-    width: 45%;
-    border: 1px solid #6c1aef;
+    width: 20%;
+    border: 1px solid #00ED89;
     line-height: 1.6rem;
     font-size: 1.3 rem;
-    background-color: #6c1aef;
+    background-color: #00ED89;
     color: #fff;
     padding: 0.5rem 0;
     transition: 0.3s ease-in-out all;
@@ -126,5 +126,5 @@ body{
 .btn-login:hover{
     cursor: pointer;
     background-color: #fff;
-    color: #6c1aef;
+    color: #00ED89;
 }
